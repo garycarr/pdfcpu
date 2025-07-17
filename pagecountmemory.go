@@ -75,7 +75,7 @@ func testPageCountFull(filename string) {
 	memBefore := memStats.Alloc
 
 	start := time.Now()
-	ctx, err := api.ReadAndValidate(f, conf)
+	pC, err := api.PageCount(f, conf)
 	duration := time.Since(start)
 
 	runtime.ReadMemStats(&memStats)
@@ -86,7 +86,7 @@ func testPageCountFull(filename string) {
 		return
 	}
 
-	fmt.Printf("Page count: %d\n", ctx.PageCount)
+	fmt.Printf("Page count: %d\n", pC)
 	fmt.Printf("Duration: %v\n", duration)
 	fmt.Printf("Memory before: %d bytes (%.2f MB)\n", memBefore, float64(memBefore)/1024/1024)
 	fmt.Printf("Memory after: %d bytes (%.2f MB)\n", memAfter, float64(memAfter)/1024/1024)
