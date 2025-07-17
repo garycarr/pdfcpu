@@ -19,7 +19,7 @@ func measureMemory() uint64 {
 }
 
 func testPageCountOptimized(filename string) {
-	fmt.Printf("Testing OPTIMIZED PageCount on %s\n", filename)
+	fmt.Printf("Testing OPTIMIZED PageCount (ReadContext + EnsurePageCount) on %s\n", filename)
 
 	f, err := os.Open(filename)
 	if err != nil {
@@ -59,7 +59,7 @@ func testPageCountOptimized(filename string) {
 }
 
 func testPageCountFull(filename string) {
-	fmt.Printf("Testing FULL READ PageCount on %s\n", filename)
+	fmt.Printf("Testing ORIGINAL PageCount (ReadAndValidate) on %s\n", filename)
 
 	f, err := os.Open(filename)
 	if err != nil {
@@ -75,18 +75,18 @@ func testPageCountFull(filename string) {
 	memBefore := memStats.Alloc
 
 	start := time.Now()
-	pC, err := api.PageCount(f, conf)
+	ctx, err := api.ReadAndValidate(f, conf)
+	if err != nil {
+		fmt.Printf("Error reading PDF: %v\n", err)
+		return
+	}
+	pageCount := ctx.PageCount
 	duration := time.Since(start)
 
 	runtime.ReadMemStats(&memStats)
 	memAfter := memStats.Alloc
 
-	if err != nil {
-		fmt.Printf("Error reading PDF: %v\n", err)
-		return
-	}
-
-	fmt.Printf("Page count: %d\n", pC)
+	fmt.Printf("Page count: %d\n", pageCount)
 	fmt.Printf("Duration: %v\n", duration)
 	fmt.Printf("Memory before: %d bytes (%.2f MB)\n", memBefore, float64(memBefore)/1024/1024)
 	fmt.Printf("Memory after: %d bytes (%.2f MB)\n", memAfter, float64(memAfter)/1024/1024)

@@ -200,12 +200,16 @@ func PageCount(rs io.ReadSeeker, conf *model.Configuration) (int, error) {
 		conf = model.NewDefaultConfiguration()
 	}
 
-	ctx, err := ReadContextForPageCountWithFallback(rs, conf)
+	ctx, err := ReadContext(rs, conf)
 	if err != nil {
 		return 0, err
 	}
 
-	return ctx.PageCount, nil
+	if err := ctx.XRefTable.EnsurePageCount(); err != nil {
+		return 0, err
+	}
+
+	return ctx.XRefTable.PageCount, nil
 }
 
 // PageCountFile returns inFile's page count.
