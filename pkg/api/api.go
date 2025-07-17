@@ -269,3 +269,28 @@ func LoadConfiguration() *model.Configuration {
 	// and need to use user fonts for stamping or watermarking.
 	return model.NewDefaultConfiguration()
 }
+
+// ReadContextForPageCount uses an io.ReadSeeker to build a minimal context for page counting only.
+func ReadContextForPageCount(rs io.ReadSeeker, conf *model.Configuration) (*model.Context, error) {
+	if rs == nil {
+		return nil, errors.New("pdfcpu: ReadContextForPageCount: missing rs")
+	}
+	return pdfcpu.ReadForPageCount(rs, conf)
+}
+
+// ReadContextForPageCountWithFallback attempts lightweight page counting first,
+func ReadContextForPageCountWithFallback(rs io.ReadSeeker, conf *model.Configuration) (*model.Context, error) {
+	if rs == nil {
+		return nil, errors.New("pdfcpu: ReadContextForPageCountWithFallback: missing rs")
+	}
+
+	ctx, err := ReadContextForPageCount(rs, conf)
+	if err != nil {
+		if log.InfoEnabled() {
+			log.Info.Printf("Lightweight page count failed, falling back to full read: %v", err)
+		}
+		return ReadAndValidate(rs, conf)
+	}
+
+	return ctx, nil
+}
