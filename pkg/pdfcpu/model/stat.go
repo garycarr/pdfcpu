@@ -17,8 +17,8 @@ limitations under the License.
 package model
 
 import (
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/log"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 )
 
 // The PDF root object fields.

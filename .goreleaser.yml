@@ -5,7 +5,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-      - '-s -w -X main.version={{.Version}} -X github.com/pdfcpu/pdfcpu/pkg/pdfcpu.VersionStr={{.Version}} -X main.commit={{.ShortCommit}} -X main.date={{.Date}} -X main.builtBy=goreleaser'
+      - '-s -w -X main.version={{.Version}} -X github.com/garycarr/pdfcpu/pkg/pdfcpu.VersionStr={{.Version}} -X main.commit={{.ShortCommit}} -X main.date={{.Date}} -X main.builtBy=goreleaser'
     goos:
       - linux
       - darwin
@@ -25,7 +25,7 @@ builds:
         goarm: 7
       - goos: windows
         goarch: arm64
-      
+
 dist: ./dist
 
 archives:
@@ -61,4 +61,3 @@ release:
     name: pdfcpu
   draft: false  # Optional: Set to true if you want to create drafts and not publish immediately
   prerelease: false  # Optional: Set to true if it's a prerelease
-

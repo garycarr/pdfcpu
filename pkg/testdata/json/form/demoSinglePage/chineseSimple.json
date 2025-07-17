@@ -22,7 +22,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -69,7 +69,7 @@
 		"dy": 5,
 		"border": false
 	},
-	
+
 	"pages": {
 		"1": {
 			"content": {
@@ -129,7 +129,7 @@
 						"tip": "原因",
 						"tab": 12,
 						"multiline": true,
-						"value": "这是一个示例文本。\n那是下一行。", 
+						"value": "这是一个示例文本。\n那是下一行。",
 						"pos": [
 							120,
 							132
@@ -143,7 +143,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -294,7 +294,7 @@
 						"pos": [
 							30,
 							190
-						],	
+						],
 						"width": 12,
 						"label": {
 							"value": "其他:",
@@ -378,7 +378,7 @@
 						}
 					}
 				],
-				
+
 				"text": [
 					{
 						"hide": false,

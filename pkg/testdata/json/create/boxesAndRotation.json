@@ -71,7 +71,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -307,7 +307,7 @@
 							"width": 20
 						}
 					}
-				]				
+				]
 			}
 		},
 		"2": {
@@ -647,7 +647,7 @@
 							"width": 10
 						}
 					}
-				]				
+				]
 			}
 		},
 		"3": {
@@ -678,7 +678,7 @@
 					}
 				],
 				"image": [
-					{	
+					{
 						"anchor": "topleft",
 						"src": "../../testdata/resources/demo.png",
 						"height": 70,
@@ -687,7 +687,7 @@
 						},
 						"rot": 0
 					},
-					{	
+					{
 						"anchor": "topleft",
 						"src": "../../testdata/resources/demo.png",
 						"height": 70,
@@ -696,7 +696,7 @@
 						},
 						"rot": 45
 					},
-					{	
+					{
 						"anchor": "topleft",
 						"src": "../../testdata/resources/demo.png",
 						"height": 70,
@@ -1571,7 +1571,7 @@
 					}
 				],
 				"box": [
-					{	
+					{
 						"anchor": "topleft",
 						"width": 120,
 						"height": 80,
@@ -1584,7 +1584,7 @@
 						},
 						"rot": 0
 					},
-					{	
+					{
 						"anchor": "topleft",
 						"width": 120,
 						"height": 80,
@@ -1597,7 +1597,7 @@
 						},
 						"rot": 45
 					},
-					{	
+					{
 						"anchor": "topleft",
 						"width": 120,
 						"height": 80,
@@ -2251,7 +2251,7 @@
 						},
 						"rot": 90
 					},
-					
+
 					{
 						"pos": [
 							700,

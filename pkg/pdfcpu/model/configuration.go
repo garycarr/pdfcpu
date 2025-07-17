@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/font"
+	"github.com/garycarr/pdfcpu/pkg/log"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 )
 
 const (

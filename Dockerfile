@@ -23,7 +23,7 @@
 FROM golang:latest AS builder
 
 # install
-RUN go install github.com/pdfcpu/pdfcpu/cmd/pdfcpu@latest
+RUN go install github.com/garycarr/pdfcpu/cmd/pdfcpu@latest
 
 ######## Start a new stage from scratch #######
 
@@ -44,5 +44,3 @@ WORKDIR /app
 
 # Entrypoint for container default executable
 ENTRYPOINT ["pdfcpu"]
-
-

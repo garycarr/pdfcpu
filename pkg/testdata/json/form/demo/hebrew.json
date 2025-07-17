@@ -25,7 +25,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -148,7 +148,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -238,7 +238,7 @@
 						"hide": false,
 						"id": "cb12",
 						"tip": "חפש ב- buhtiG",
-						"tab": 8, 
+						"tab": 8,
 						"value": false,
 						"pos": [
 							508,
@@ -303,7 +303,7 @@
 						"pos": [
 							508,
 							190
-						],	
+						],
 						"width": 12,
 						"label": {
 							"value": "סיבה אחרת:",
@@ -384,7 +384,7 @@
 						}
 					}
 				],
-				
+
 				"text": [
 					{
 						"hide": false,
@@ -489,7 +489,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -580,7 +580,7 @@
 						"hide": false,
 						"id": "cb22",
 						"tip": "חפש ב- buhtiG",
-						"tab": 8,  
+						"tab": 8,
 						"value": false,
 						"pos": [
 							508,
@@ -645,7 +645,7 @@
 						"pos": [
 							508,
 							190
-						],	
+						],
 						"width": 12,
 						"label": {
 							"value": "סיבה אחרת:",
@@ -728,7 +728,7 @@
 						}
 					}
 				],
-				
+
 				"text": [
 					{
 						"hide": false,

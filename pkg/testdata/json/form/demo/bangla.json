@@ -25,7 +25,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -144,7 +144,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -291,7 +291,7 @@
 						"pos": [
 							30,
 							190
-						],	
+						],
 						"width": 12,
 						"label": {
 							"value": "অন্যান্য:",
@@ -365,7 +365,7 @@
 						}
 					}
 				],
-				
+
 				"text": [
 					{
 						"hide": false,
@@ -463,7 +463,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -611,7 +611,7 @@
 						"pos": [
 							30,
 							190
-						],	
+						],
 						"width": 12,
 						"label": {
 							"value": "অন্যান্য:",
@@ -687,7 +687,7 @@
 						}
 					}
 				],
-				
+
 				"text": [
 					{
 						"hide": false,

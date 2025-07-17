@@ -26,7 +26,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -146,7 +146,7 @@
 						}
 					}
 				],
-				
+
 				"datefield": [
 					{
 						"hide": false,
@@ -384,7 +384,7 @@
 				],
 
 				"text": [
-					{	
+					{
 						"hide": false,
 						"value": "1) Fortell oss gjerne om deg selv:",
 						"pos": [
@@ -706,7 +706,7 @@
 				],
 
 				"text": [
-					{	
+					{
 						"hide": false,
 						"value": "1) Fortell oss gjerne om deg selv:",
 						"pos": [

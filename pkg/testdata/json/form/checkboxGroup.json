@@ -67,7 +67,7 @@
 		},
 		"logo2": {
 			"src": "$logo2",
-			"url": "https://github.com/pdfcpu/pdfcpu",
+			"url": "https://github.com/garycarr/pdfcpu",
 			"margin": {
 				"width": 5
 			}
@@ -83,7 +83,7 @@
 				"style": "round"
 			},
 			"padding": {
-				"width": 6 
+				"width": 6
 			}
 		}
 	},
@@ -126,7 +126,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -149,10 +149,10 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
-								"hide": false,	
+								"hide": false,
 								"id": "lrcheckbox1",
 								"value": false,
 								"pos": [
@@ -189,7 +189,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"id": "llcheckbox1b",
@@ -236,7 +236,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"bgCol": "$DarkSeaGreen",
 						"border": {
 							"width": 5,
@@ -290,7 +290,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"bgCol": "$DarkSeaGreen",
 						"checkbox": [
 							{
@@ -371,7 +371,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -419,7 +419,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -467,7 +467,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -490,7 +490,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -513,7 +513,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -536,7 +536,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -563,7 +563,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -590,7 +590,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -617,7 +617,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -640,7 +640,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -663,7 +663,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -686,7 +686,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,
@@ -713,7 +713,7 @@
 					},
 					{
 						"name": "$cbg",
-						"hide": false,	
+						"hide": false,
 						"checkbox": [
 							{
 								"hide": false,

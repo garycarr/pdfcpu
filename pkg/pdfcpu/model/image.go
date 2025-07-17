@@ -34,8 +34,8 @@ import (
 
 	"github.com/hhrutter/tiff"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/filter"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
 	_ "golang.org/x/image/webp"
 )

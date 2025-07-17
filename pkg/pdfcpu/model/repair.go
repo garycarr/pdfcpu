@@ -19,7 +19,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/garycarr/pdfcpu/pkg/log"
 )
 
 func showMessage(topic, msg string) {

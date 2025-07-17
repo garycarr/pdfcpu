@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
+	"github.com/garycarr/pdfcpu/pkg/filter"
 )
 
 func TestFilterSupport(t *testing.T) {

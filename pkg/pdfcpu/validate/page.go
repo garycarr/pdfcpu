@@ -19,9 +19,9 @@ package validate
 import (
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/log"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/model"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
 )
 

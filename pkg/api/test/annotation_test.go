@@ -21,11 +21,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/color"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/api"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/color"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/model"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 )
 
 var textAnn model.AnnotationRenderer = model.NewTextAnnotation(
@@ -45,17 +45,17 @@ var textAnn model.AnnotationRenderer = model.NewTextAnnotation(
 	0,                                   // borderRadY
 	2,                                   // borderWidth
 	false,                               // displayOpen
-	"Comment")                           // name
+	"Comment") // name
 
 var textAnnCJK model.AnnotationRenderer = model.NewTextAnnotation(
 	*types.NewRectangle(0, 100, 100, 200), // rect
 	0,                                     // apObjNr
-	"文字注释",                                // contents
+	"文字注释",                            // contents
 	"ID1CJK",                              // id
 	"",                                    // modDate
 	0,                                     // f
 	&color.Gray,                           // col
-	"标题1",                                 // title
+	"标题1",                               // title
 	nil,                                   // popupIndRef
 	nil,                                   // ca
 	"RC",                                  // rc
@@ -64,23 +64,23 @@ var textAnnCJK model.AnnotationRenderer = model.NewTextAnnotation(
 	0,                                     // borderRadY
 	2,                                     // borderWidth
 	true,                                  // displayOpen
-	"Comment")                             // name
+	"Comment") // name
 
 var freeTextAnn model.AnnotationRenderer = model.NewFreeTextAnnotation(
-	*types.NewRectangle(200, 300, 400, 500), // rect
-	0,                                       // apObjNr
+	*types.NewRectangle(200, 300, 400, 500),    // rect
+	0,                                          // apObjNr
 	`Mac Preview shows "Contents"
 line 2
 line 3`, // contents
-	"ID1",           // id
-	"",              // modDate
-	model.AnnLocked, // f
-	&color.Gray,     // col
-	"Title1",        // title
-	nil,             // popupIndRef
-	nil,             // ca
-	"",              // rc
-	"",              // subject
+	"ID1",                                      // id
+	"",                                         // modDate
+	model.AnnLocked,                            // f
+	&color.Gray,                                // col
+	"Title1",                                   // title
+	nil,                                        // popupIndRef
+	nil,                                        // ca
+	"",                                         // rc
+	"",                                         // subject
 	`A.Reader renders rich text ("RC").
 line 2
 line 3`,
@@ -102,7 +102,7 @@ line 3`,
 	0,             // borderWidth
 	model.BSSolid, // borderStyle
 	false,         // cloudyBorder
-	0)             // cloudyBorderIntensity
+	0) // cloudyBorderIntensity
 
 var linkAnn model.AnnotationRenderer = model.NewLinkAnnotation(
 	*types.NewRectangle(200, 0, 300, 100), // rect
@@ -147,7 +147,7 @@ var squareAnn model.AnnotationRenderer = model.NewSquareAnnotation(
 var squareAnnCJK model.AnnotationRenderer = model.NewSquareAnnotation(
 	*types.NewRectangle(300, 50, 350, 100), // rect
 	0,                                      // apObjNr
-	"方形注释",                                 // contents
+	"方形注释",                             // contents
 	"ID3CJK",                               // id
 	"",                                     // modDate
 	0,                                      // f
@@ -195,7 +195,7 @@ var circleAnn model.AnnotationRenderer = model.NewCircleAnnotation(
 var circleAnnCJK model.AnnotationRenderer = model.NewCircleAnnotation(
 	*types.NewRectangle(400, 50, 450, 100), // rect
 	0,                                      // apObjNr
-	"圆圈注释",                                 // contents
+	"圆圈注释",                             // contents
 	"ID4CJK",                               // id
 	"",                                     // modDate
 	0,                                      // f
@@ -950,27 +950,27 @@ func TestPolyLineAnnotation(t *testing.T) {
 	leOpenArrow := model.LEOpenArrow
 
 	polyLineAnn := model.NewPolyLineAnnotation(
-		*types.NewRectangle(30, 30, 110, 110), // rect
-		0,                                     // apObjNr
-		"PolyLine Annotation",                 // contents
-		"IDPolyLine",                          // id
-		"",                                    // modDate
-		0,                                     // f
-		&color.Gray,                           // col
-		"Title1",                              // title
-		nil,                                   // popupIndRef
-		nil,                                   // ca
-		"",                                    // rc
-		"",                                    // subject
+		*types.NewRectangle(30, 30, 110, 110),           // rect
+		0,                                               // apObjNr
+		"PolyLine Annotation",                           // contents
+		"IDPolyLine",                                    // id
+		"",                                              // modDate
+		0,                                               // f
+		&color.Gray,                                     // col
+		"Title1",                                        // title
+		nil,                                             // popupIndRef
+		nil,                                             // ca
+		"",                                              // rc
+		"",                                              // subject
 		types.NewNumberArray(30, 30, 110, 110, 110, 30), // vertices
-		nil,            // path
-		nil,            // intent
-		nil,            // measure
-		&color.Green,   // fillCol
-		1,              // borderWidth
-		model.BSDashed, // borderStyle
-		&leButt,        // start lineEndingStyle
-		&leOpenArrow,   // end lineEndingStyle
+		nil,                                             // path
+		nil,                                             // intent
+		nil,                                             // measure
+		&color.Green,                                    // fillCol
+		1,                                               // borderWidth
+		model.BSDashed,                                  // borderStyle
+		&leButt,                                         // start lineEndingStyle
+		&leOpenArrow,                                    // end lineEndingStyle
 	)
 
 	// Add PolyLine annotation.
@@ -988,27 +988,27 @@ func TestPolygonAnnotation(t *testing.T) {
 	outFile := filepath.Join(samplesDir, "annotations", "PolygonAnnotation.pdf")
 
 	polygonAnn := model.NewPolygonAnnotation(
-		*types.NewRectangle(30, 30, 110, 110), // rect
-		0,                                     // apObjNr
-		"Polygon Annotation",                  // contents
-		"IDPolygon",                           // id
-		"",                                    // modDate
-		0,                                     // f
-		&color.Gray,                           // col
-		"Title1",                              // title
-		nil,                                   // popupIndRef
-		nil,                                   // ca
-		"",                                    // rc
-		"",                                    // subject
+		*types.NewRectangle(30, 30, 110, 110),           // rect
+		0,                                               // apObjNr
+		"Polygon Annotation",                            // contents
+		"IDPolygon",                                     // id
+		"",                                              // modDate
+		0,                                               // f
+		&color.Gray,                                     // col
+		"Title1",                                        // title
+		nil,                                             // popupIndRef
+		nil,                                             // ca
+		"",                                              // rc
+		"",                                              // subject
 		types.NewNumberArray(30, 30, 110, 110, 110, 30), // vertices
-		nil,            // path
-		nil,            // intent
-		nil,            // measure
-		&color.Green,   // fillCol
-		5,              // borderWidth
-		model.BSDashed, // borderStyle
-		true,           // cloudyBorder
-		2)              // cloudyBorderIntensity
+		nil,                                             // path
+		nil,                                             // intent
+		nil,                                             // measure
+		&color.Green,                                    // fillCol
+		5,                                               // borderWidth
+		model.BSDashed,                                  // borderStyle
+		true,                                            // cloudyBorder
+		2) // cloudyBorderIntensity
 
 	// Add Polygon annotation.
 	if err := api.AddAnnotationsFile(inFile, outFile, nil, polygonAnn, nil, false); err != nil {
@@ -1054,7 +1054,7 @@ func TestLineAnnotation(t *testing.T) {
 		0,                                     // caption offset Y
 		nil,                                   // fillCol
 		1,                                     // borderWidth
-		model.BSSolid)                         // borderStyle
+		model.BSSolid) // borderStyle
 
 	// Add line annotation.
 	if err := api.AddAnnotationsFile(inFile, outFile, nil, lineAnn, nil, false); err != nil {
@@ -1087,7 +1087,7 @@ func TestCaretAnnotation(t *testing.T) {
 		"",                                    // rc
 		"",                                    // subject
 		types.NewRectangle(20, 20, 20, 20),    // RD
-		true)                                  // paragraph symbol
+		true) // paragraph symbol
 
 	// Add line annotation.
 	if err := api.AddAnnotationsFile(inFile, outFile, nil, caretAnn, nil, false); err != nil {

@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
+	"github.com/garycarr/pdfcpu/pkg/api"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/model"
+	"github.com/garycarr/pdfcpu/pkg/pdfcpu/types"
 )
 
 var inDir, outDir, resDir, samplesDir string
